@@ -7,5 +7,13 @@
 	<title>Titles Are Hard</title>
 </head>
 <body>
-	<h1>Holy Shit this is actually working!!!</h1>
+	<h1>Welcome!</h1>
+	{% for post in posts %}
+	<div>
+		<h2>{{ post.title }}</h2>
+		<hr />
+		<p>published: {{ post.published_date }}</p>
+		<p>{{ post.text|linebreaksbr }}</p>
+	</div>
+	{% endfor %}
 </body>
