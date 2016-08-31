@@ -134,3 +134,7 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+#postgres stuff? https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
