@@ -78,6 +78,9 @@ WSGI_APPLICATION = 'JRDNLV.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+#postgres stuff? https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python
+#the postgres stuff is commented out
+#import dj_database_url
 
 DATABASES = {
     'default': {
@@ -85,6 +88,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+#DATABASES['default'] = dj_database_url.config()
+#DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -135,6 +140,3 @@ STATICFILES_DIRS = [
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#postgres stuff? https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
