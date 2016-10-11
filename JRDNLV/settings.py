@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
-    'whitenoise.runserver_nostatic',
+	 #'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'homepage',
 ]
@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'JRDNLV.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Jordan',
+		  'USER': 'Jordan',
+		  'PASSWORD': '',
+		  'HOST': '',
+		  'PORT': '5432',
     }
 }
 #DATABASES['default'] = dj_database_url.config()

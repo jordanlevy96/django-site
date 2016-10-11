@@ -1,0 +1,41 @@
+/*
+	stylesheet for homepage
+	not much content, so not much to style
+*/
+
+h2 a {
+	color: #3DA61B; /* lighter green */	
+	font-size: 2em;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	color: #34751E;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+.header {
+	background-color: #3DA61B;
+	padding: 0.5em 0.5em 0 0.5em;
+}
+
+.header h1 {
+	color: #FFFFFF;
+	font-size: 3em;
+	padding-left: 0.25em;
+}
+
+#date {
+	color: #828282;
+}
+
+.post {
+	margin-bottom: 5em;
+}
+
+.row {
+	margin-left: 0.5em;
+}

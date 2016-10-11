@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="description" content="homepage post list" />
-	<meta name="author" content="Jordan Levy" />
-	<title>Titles Are Hard</title>
-</head>
-<body>
-	<h1>Welcome!</h1>
+{% extends 'homepage/base.html' %}
+
+{% block content %}
 	{% for post in posts %}
-	<div>
-		<h2>{{ post.title }}</h2>
+	<div class="post">
+		<h2><span title="Click to view post details">
+			<a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+		</span></h2>
+		<p id="date">published: {{ post.published_date }}</p>
 		<hr />
-		<p>published: {{ post.published_date }}</p>
 		<p>{{ post.text|linebreaksbr }}</p>
 	</div>
 	{% endfor %}
-</body>
+{% endblock %}

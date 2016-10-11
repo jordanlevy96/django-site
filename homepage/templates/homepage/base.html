@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="homepage post list" />
+	<meta name="author" content="Jordan Levy" />
+	<title>Titles Are Hard</title>
+	<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Title! Think of something, you jag.</h1>
+	</div>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-md-8">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
