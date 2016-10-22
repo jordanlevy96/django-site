@@ -21,8 +21,9 @@ class Choice(models.Model):
 
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
-	title = models.CharField(max_length=200)
+	title = models.CharField(max_length=100)
 	text = models.TextField()
+	description = models.CharField(max_length=200)
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 

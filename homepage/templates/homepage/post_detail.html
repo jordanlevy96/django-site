@@ -1,6 +1,12 @@
 {% extends 'homepage/base.html' %}
 
 {% block content %}
+	{% if user.is_authenticated %}
+		<div class="admin-button">
+			<p><a href="{% url 'post_edit' pk=post.pk %}">Edit Post</a></p>
+		</div>
+	{% endif %}
+
 	<div class="post">
 		<h1 id="post_title">{{ post.title }}</h1>
 		{% if post.published_date %}
@@ -9,4 +15,6 @@
 		<hr />
 		<p>{{ post.text|linebreaksbr }}</p>
 	</div>
+
+	<p><a href="{% url 'post_list' %}">Return to homepage</a></p>
 {% endblock %}

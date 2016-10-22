@@ -3,14 +3,18 @@
 	not much content, so not much to style
 */
 
+h1 {
+	font-size: 3em;
+}
+
 h2 a {
-	color: #3DA61B; /* lighter green */	
+	color: #3DA61B; /* lightish green */
 	font-size: 2em;
 	text-decoration: none;
 }
 
 h2 a:hover {
-	color: #34751E;
+	color: #34751E; /* darker green */
 }
 
 body {
@@ -18,18 +22,17 @@ body {
 }
 
 .header {
-	background-color: #3DA61B;
+	background-color: #3DA61B; /* same as h2 */
 	padding: 0.5em 0.5em 0 0.5em;
 }
 
 .header h1 {
-	color: #FFFFFF;
-	font-size: 3em;
+	color: #FFFFFF; /* white */
 	padding-left: 0.25em;
 }
 
 #date {
-	color: #828282;
+	color: #828282; /* grey */
 }
 
 .post {
@@ -38,4 +41,22 @@ body {
 
 .row {
 	margin-left: 0.5em;
+}
+
+form label {
+	color: #828282; /* grey */
+	
+}
+
+.admin-button a {
+	padding: 2px 2px 2px 2px;
+	float: right;
+	border-style: double;
+	border-width: 2px;
+	border-color: #828282;
+	text-decoration: none;
+}
+
+.admin-button a:link, .admin-button a:visited {
+	color: #34751E;
 }

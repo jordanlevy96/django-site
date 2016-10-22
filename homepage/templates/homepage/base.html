@@ -13,8 +13,14 @@
 
 <body>
 	<div class="header">
-		<h1>Title! Think of something, you jag.</h1>
+		<h1>(Working Title)</h1>
 	</div>
+
+	{% if user.is_authenticated %}
+		<div class="admin-button">
+			<p><a href="{% url 'post_new' %}">New Post</a></p>
+		</div>
+	{% endif %}
 
 	<div class="content">
 		<div class="row">
