@@ -1,4 +1,4 @@
-{% extends 'homepage/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
 	<h1>New Post</h1>
@@ -11,5 +11,5 @@
 		<p>{{ form.description }}</p>
 		<button type="submit">Save</button>
 	</form>
-	<p><a href="{% url 'post_list' %}">Return to homepage</a></p>
+	<p><a href="{% url 'post_list' %}">Return to blog</a></p>
 {% endblock %}

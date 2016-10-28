@@ -1,4 +1,4 @@
-{% extends 'homepage/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
 	{% if user.is_authenticated %}
@@ -16,5 +16,5 @@
 		<p>{{ post.text|linebreaksbr }}</p>
 	</div>
 
-	<p><a href="{% url 'post_list' %}">Return to homepage</a></p>
+	<p><a href="{% url 'post_list' %}">Return to blog</a></p>
 {% endblock %}
