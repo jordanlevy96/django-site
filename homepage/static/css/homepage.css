@@ -7,56 +7,38 @@ h1 {
 	font-size: 3em;
 }
 
-h2 a {
-	color: #3DA61B; /* lightish green */
-	font-size: 2em;
-	text-decoration: none;
-}
-
-h2 a:hover {
-	color: #34751E; /* darker green */
-}
-
 body {
 	font-family: 'Helvetica Neue', sans-serif;
 }
 
+/* header */
 .header {
 	background-color: #3DA61B; /* same as h2 */
-	padding: 0.5em 0.5em 0 0.5em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .header h1 {
 	color: #FFFFFF; /* white */
 	padding-left: 0.25em;
+	margin-bottom: 0;
 }
 
-#date {
-	color: #828282; /* grey */
+/* navbar */
+.header nav {
+
 }
 
-.post {
-	margin-bottom: 5em;
+.header nav ul {
+	list-style-type: none;
+	padding-left: 0.75em;
 }
 
-.row {
-	margin-left: 0.5em;
+.header nav li {
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
 }
 
-form label {
-	color: #828282; /* grey */
-	
-}
-
-.admin-button a {
-	padding: 2px 2px 2px 2px;
-	float: right;
-	border-style: double;
-	border-width: 2px;
-	border-color: #828282;
-	text-decoration: none;
-}
-
-.admin-button a:link, .admin-button a:visited {
-	color: #34751E;
+.header nav li a {
+	color: #FFFFFF;
 }

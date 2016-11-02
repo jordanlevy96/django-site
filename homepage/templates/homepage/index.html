@@ -9,8 +9,27 @@
 	<meta name="author" content="Jordan Levy" />
 	<title>Titles Are Hard</title>
 	<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+	<script src="{% static 'js/index.js' %}"></script>
 </head>
 <body>
-	<h1>Homepage</h1>
+	<div class="header">
+		<h1>JordanWrites</h1>
+		<nav>
+			<ul>
+				<li id="home-link"><a>Home</a></li>
+				<li id="blog-link"><a>Blog</a></li>
+				<li id="essay-link"><a>Essais</a></li>
+				<li id="tech-link"><a>Tech Blog</a></li>
+				<li id="story-link"><a>Stories</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="intro">
+		<h2>Welcome to my website!</h2>
+		<p>This site serves as a window into my life. It will be filled with stories of my travels, my take on social and political issues, philosophy, reviews, references, programming projects; truly whatever I want.</p>
+		<p>In the words of Michel de Montaigne: "I want to be seen here in my simple, natural, ordinary fashion, without straining or artifice; for it is myself that I portray. My defects will here be read to the life, and also my natural form..."</p>
+	</div>
+
 </body>
 </html>
