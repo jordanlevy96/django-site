@@ -24,10 +24,6 @@ body {
 }
 
 /* navbar */
-.header nav {
-
-}
-
 .header nav ul {
 	list-style-type: none;
 	padding-left: 0.75em;
@@ -39,6 +35,6 @@ body {
 	padding: 0.5em 1em 0.5em 1em;
 }
 
-.header nav li a {
+.header nav li, .header nav ul a:visited {
 	color: #FFFFFF;
 }
