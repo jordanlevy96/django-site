@@ -8,28 +8,21 @@
 	<meta name="description" content="My website!" />
 	<meta name="author" content="Jordan Levy" />
 	<title>Titles Are Hard</title>
+	<link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
 	<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
-	<script src="{% static 'js/index.js' %}"></script>
+	<script src="{% static 'js/header.js' %}"></script>
 </head>
 <body>
-	<div class="header">
-		<h1>JordanWrites</h1>
-		<nav>
-			<ul>
-				<a href="#"><li id="home-link">Home</li></a>
-				<a href="{% url 'post_list' %}"><li id="blog-link">Blog</li></a>
-				<li id="essay-link">Essais</li>
-				<li id="tech-link">Tech Blog</li>
-				<li id="story-link">Stories</li>
-			</ul>
-		</nav>
-	</div>
+
+	{% include 'header.html' %}
 
 	<div class="intro">
 		<h2>Welcome to my website!</h2>
 		<p>This site serves as a window into my life. It will be filled with stories of my travels, my take on social and political issues, philosophy, reviews, references, programming projects; truly whatever I want.</p>
 		<p>In the words of Michel de Montaigne: "I want to be seen here in my simple, natural, ordinary fashion, without straining or artifice; for it is myself that I portray. My defects will here be read to the life, and also my natural form..."</p>
 	</div>
+
+{% include 'footer.html' %}
 
 </body>
 </html>

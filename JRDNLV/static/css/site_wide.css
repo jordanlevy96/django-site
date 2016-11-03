@@ -1,0 +1,31 @@
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+.header {
+	background-color: #3DA61B; /* same as h2 */
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.header h1 {
+	color: #FFFFFF; /* white */
+	padding-left: 0.25em;
+	margin-bottom: 0;
+}
+
+/* navbar */
+.header nav ul {
+	list-style-type: none;
+	padding-left: 0.75em;
+}
+
+.header nav li {
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.header nav li, .header nav ul a:visited {
+	color: #FFFFFF;
+}

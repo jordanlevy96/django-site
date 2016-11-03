@@ -16,20 +16,6 @@ h2 a:hover {
 	color: #34751E; /* darker green */
 }
 
-body {
-	font-family: 'Helvetica Neue', sans-serif;
-}
-
-.header {
-	background-color: #3DA61B; /* same as h2 */
-	padding: 0.5em 0.5em 0 0.5em;
-}
-
-.header h1 {
-	color: #FFFFFF; /* white */
-	padding-left: 0.25em;
-}
-
 #date {
 	color: #828282; /* grey */
 }
@@ -44,7 +30,7 @@ body {
 
 form label {
 	color: #828282; /* grey */
-	
+
 }
 
 .admin-button a {

@@ -7,14 +7,14 @@
 	<meta charset="utf-8" />
 	<meta name="description" content="blog post list" />
 	<meta name="author" content="Jordan Levy" />
-	<title>Titles Are Hard</title>
+	<title>Jordan Writes</title>
+	<link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
 	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 
 <body>
-	<div class="header">
-		<h1>(Working Title)</h1>
-	</div>
+
+	{% include 'header.html' %}
 
 	{% if user.is_authenticated %}
 		<div class="admin-button">
