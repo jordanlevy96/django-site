@@ -27,6 +27,12 @@ class Post(models.Model):
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 
+	POST_TYPES = (
+		('B', 'blog'),
+		('T', 'tech'),
+	)
+	post_type = models.CharField(max_length=1, choices=POST_TYPES, default='B')
+
 	def publish(self):
 		self.published_date = timezone.now()
 		self.save()

@@ -5,9 +5,11 @@
 			<a href="{% url 'index' %}"><li id="home-link">Home</li></a>
 			<a href="{% url 'post_list' %}"><li id="blog-link">Blog</li></a>
 			<span title="Coming Soon!">
-			<li id="essay-link">Essais</li>
-			<li id="tech-link">Tech Blog</li>
-			<li id="story-link">Stories</li>
+				<li id="essay-link">Essais</li>
+			</span>
+			<a href="{% url 'tech_list' %}"><li id="tech-link">Tech Blog</li></a>
+			<span title="Coming Soon!">
+				<li id="story-link">Stories</li>
 			</span>
 		</ul>
 	</nav>
