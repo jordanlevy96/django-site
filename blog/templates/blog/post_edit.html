@@ -9,6 +9,8 @@
 		<p>{{ form.text }}</p>
 		<p><label for="id_description">Description:</label></p>
 		<p>{{ form.description }}</p>
+		<p><label for="id_type">Post Type</label></p>
+		<p>{{ form.post_type }}</p>
 		<button type="submit">Save</button>
 	</form>
 	<p><a href="{% url 'post_list' %}">Return to blog</a></p>
