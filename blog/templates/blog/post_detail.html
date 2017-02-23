@@ -16,5 +16,10 @@
 		<p>{{ post.text|linebreaksbr }}</p>
 	</div>
 
-	<p><a href="{% url 'post_list' %}">Return to blog</a></p>
+	{% if post.post_type == "B" %}
+		<p><a href="{% url 'post_list' %}">Return to blog</a></p>
+	{% else %}
+		<p><a href="{% url 'tech_list' %}">Return to blog</a></p>
+	{% endif %}
+
 {% endblock %}
