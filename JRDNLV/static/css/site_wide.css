@@ -14,6 +14,15 @@ body {
 	margin-bottom: 0;
 }
 
+/* footer */
+.footer {
+	text-align: center;
+}
+
+#copyright {
+	font-size: 0.6em;
+}
+
 /* navbar */
 .header nav ul {
 	list-style-type: none;

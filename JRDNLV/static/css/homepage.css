@@ -10,3 +10,12 @@ h1 {
 body {
 	font-family: 'Helvetica Neue', sans-serif;
 }
+
+h2 {
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.intro {
+	margin-left: 0.5em;
+}
