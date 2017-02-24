@@ -7,10 +7,10 @@ function englishToFrench() {
 }
 
 function init() {
-	essai = document.getElementById("essay-link");
+	essays = document.getElementById("essays-link");
 
-	essai.onmouseover = frenchToEnglish;
-	essai.onmouseout = englishToFrench;
+	essays.onmouseover = englishToFrench;
+	essays.onmouseout = frenchToEnglish;
 }
 
 window.onload = init;
