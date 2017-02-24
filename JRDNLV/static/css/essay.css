@@ -1,0 +1,47 @@
+/*
+	stylesheet for blog
+*/
+
+h1 {
+	font-size: 3em;
+}
+
+h2 a {
+	color: #3DA61B; /* lightish green */
+	font-size: 2em;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	color: #34751E; /* darker green */
+}
+
+#date {
+	color: #828282; /* grey */
+}
+
+.post {
+	margin-bottom: 5em;
+}
+
+.row {
+	margin-left: 0.5em;
+}
+
+form label {
+	color: #828282; /* grey */
+
+}
+
+.admin-button a {
+	padding: 2px 2px 2px 2px;
+	float: right;
+	border-style: double;
+	border-width: 2px;
+	border-color: #828282;
+	text-decoration: none;
+}
+
+.admin-button a:link, .admin-button a:visited {
+	color: #34751E;
+}
