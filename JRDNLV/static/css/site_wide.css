@@ -5,7 +5,16 @@ body {
 /* header */
 .header {
 	background-color: #3DA61B; /* same as h2 */
+	display: flex;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.header #navbar {
 	padding: 0.5em 0.5em 0.5em 0.5em;
+	align-content: flex-start;
 }
 
 .header h1 {
@@ -14,14 +23,40 @@ body {
 	margin-bottom: 0;
 }
 
-/* footer */
-.footer {
-	text-align: center;
+.header #base {
+	align-content: flex-start;
 }
 
-#copyright {
-	font-size: 0.6em;
+.header #author-window {
+	flex: 1 0 0;
+	align-content: flex-end;
+	align-items: center;
 }
+
+.header #author-window img {
+	margin-top: 1em;
+	margin-left: 2.5em;
+}
+
+.header #author-window ul {
+	list-style-type: none;
+	margin-right: 1em;
+}
+
+.header #author-window li {
+	margin-top: 0.2em;
+	white-space: nowrap;
+}
+
+.header #author-window li, .header #author-window ul a:visited {
+	color: #FFFFFF;
+}
+
+.header #base {
+	display: flex;
+	flex: 10 0 0;
+}
+
 
 /* navbar */
 .header nav ul {
@@ -33,8 +68,25 @@ body {
 	border: 1px solid #FFFFFF;
 	display: inline-block;
 	padding: 0.5em 1em 0.5em 1em;
+	margin-top: 0.6em;
 }
 
 .header nav li, .header nav ul a:visited {
 	color: #FFFFFF;
 }
+
+/* author window */
+.header li {
+	border: 1px solid #FFFFFF;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+/* footer */
+.footer {
+	text-align: center;
+}
+
+#legal {
+	font-size: 0.6em;
+}
+

@@ -10,6 +10,9 @@ def index(request):
 def about(request):
 	return render(request, 'homepage/about.html')
 
+def contact(request):
+	return render(request, 'homepage/contact.html')
+
 def handler404(request):
    response = render_to_response('404.html', {},
                context_instance=RequestContext(request))

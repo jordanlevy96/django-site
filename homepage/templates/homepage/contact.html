@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My website!" />
+    <meta name="author" content="Jordan Levy" />
+    <title>Jordan Writes</title>
+    <link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <script src="{% static 'js/header.js' %}"></script>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="intro">
+        <h2>Contact Me</h2>
+        <p>Here are some social media platforms you can reach me on. You can also <a href="mailto:jordanlevy96+website@gmail.com">email me</a> if you so please.</p>
+
+        <h3>Facebook</h3>
+        <p>Unfortunately, the platform I spend the most time on. Hopefully one day we'll get a better alternative--and it'll suck up less of my time. I'm a little anal about my profile and prune it to 1000 friends--don't be upset if I deleted you! I only delete people if I don't remember them, we never talk, or they don't post anything of interest to me. You can always rekindle a friendship if you so please :)</p>
+        <a href="http://www.facebook.com/Jordan.X.Levy">Probably not the best way to reach me if I don't already know you.</a>
+
+        <h3>LinkedIn</h3>
+        <p>If this is interesting to you, awesome! I am actively searching for professional opportunities. I am particularly interested in game development, have lots of experience in web development (mostly front-end but definitely back-end too), and have dabbled in other software disciplines through my studies. I am also interested in writing and editing.</p>
+        <a href="https://www.linkedin.com/in/jordan-levy-704952a2/">Professional development, woo!</a>
+
+        <h3>GitHub</h3>
+        <p>I'm not sure if GitHub really counts as social media, but I wanted to include it here either way. Unfortunately, some of my coolest projects must be private.</p>
+        <a href="https://github.com/jordanlevy96">If you look closely at my commits, you can tell when my deadlines are!</a>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
