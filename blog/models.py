@@ -13,29 +13,25 @@ class Question(models.Model):
       return self.pub_date >= timezone.now() - datetime.timedelta(days = 1)
 
 class Choice(models.Model):
-	 question = models.ForeignKey(Question, on_delete = models.CASCADE)
-	 choice_text = models.CharField(max_length = 200)
-	 votes = models.IntegerField(default=0)
-	 def __str__(self):
-		  return self.choice_text
+     question = models.ForeignKey(Question, on_delete = models.CASCADE)
+     choice_text = models.CharField(max_length = 200)
+     votes = models.IntegerField(default=0)
+     def __str__(self):
+          return self.choice_text
 
 class Post(models.Model):
-	author = models.ForeignKey('auth.User')
-	title = models.CharField(max_length=100)
-	text = models.TextField()
-	description = models.CharField(max_length=200)
-	created_date = models.DateTimeField(default=timezone.now)
-	published_date = models.DateTimeField(blank=True, null=True)
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=100)
+    text = models.TextField()
+    description = models.CharField(max_length=200)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+    tags = models.CharField(max_length=100)
+    post_type = models.CharField(max_length=1, choices=POST_TYPES, default='B')
 
-	POST_TYPES = (
-		('B', 'blog'),
-		('T', 'tech'),
-	)
-	post_type = models.CharField(max_length=1, choices=POST_TYPES, default='B')
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
-	def publish(self):
-		self.published_date = timezone.now()
-		self.save()
-
-	def __str__(self):
-		return self.title
+    def __str__(self):
+        return self.title
