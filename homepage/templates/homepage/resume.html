@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My website!" />
+    <meta name="author" content="Jordan Levy" />
+    <title>Jordan Writes</title>
+    <link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <script src="{% static 'js/header.js' %}"></script>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="resume">
+        <div>
+            <h2>Hello, Interested Party!</h2>
+
+            <p>Welcome! This is my simple blogging site; I may not be a prolific content creator, but I made this site to expand my web development skills and eventually publish some of my writing. </p>
+
+
+
+        </div>
+    </div>
+
+{% include 'footer.html' %}
+
+</body>
+</html>

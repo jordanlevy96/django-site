@@ -13,6 +13,9 @@ def about(request):
 def contact(request):
 	return render(request, 'homepage/contact.html')
 
+def resume(request):
+    return render(request, 'homepage/resume.html')
+
 def handler404(request):
    response = render_to_response('404.html', {},
                context_instance=RequestContext(request))
