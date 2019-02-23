@@ -1,43 +1,33 @@
-# Heroku Django Starter Template
+# Jordan's Blogging Site
 
-An utterly fantastic project starter template for Django 1.9.
+This site was built by the utterly fantastic project starter template for Django 1.9.
 
 ## Features
 
-- Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
-- Enhancements to Django's static file serving functionality via WhiteNoise
+- Random content that I want to share with the Internet
+- Technical stuff supported by Django and its dependencies
 
 ## How to Use
 
 To use this project, follow these steps:
 
-1. Create your working environment.
-2. Install Django (`$ pip install django`)
-3. Create a new project using this template
+1. Follow [this link](http://https://jrdnlv.herokuapp.com/home/) to navigate through the site.
+2. Read through my source code here for fun!
 
-## Creating Your Project
+## Contributions
 
-Using this template to create a new Django app is easy::
-
-    $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
-
-You can replace ``helloworld`` with your desired project name.
-
-## Deployment to Heroku
-
-    $ git init
-    $ git add -A
-    $ git commit -m "Initial commit"
-
-    $ heroku create
-    $ git push heroku master
-
-    $ heroku run python manage.py migrate
-
-See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
+If you are possessed with the desire to contribute to a mostly barren site like this, you are free to fork this repository and make a pull request. I'm not sure why you would, though.
 
 ## Further Reading
 
+### Technical Stuff Relevant to this site
+
+- [Django](https://www.djangoproject.com/)
 - [Gunicorn](https://warehouse.python.org/project/gunicorn/)
 - [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
 - [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
+
+### Non-technical stuff that I recommend here arbitrarily
+- [Cookies, a brilliant short story by Douglas Adams, hosted on a silly website](http://www.math.toronto.edu/beni/bERNARDO_nOT_fOUND/fUNNY_sTUFF/Entries/2007/11/27_cookies.html)
+- [The Powder Game, a free webgame that I played in middle school](https://dan-ball.jp/en/javagame/dust/)
+- [An archive of old school arcade games that you can play in your browser](https://archive.org/details/internetarcade)
