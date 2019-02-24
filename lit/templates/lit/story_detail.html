@@ -1,0 +1,18 @@
+{% extends 'lit/base.html' %}
+
+{% block content %}
+
+    <div class="story">
+        <h1 id="title">{{ story.title }}</h1>
+        {% if story.created_date %}
+            <p class="date">{{ story.created_date }}
+        {% endif %}
+        <hr />
+        <p>{{ story.text|linebreaksbr }}</p>
+    </div>
+
+    <br><br><br>
+
+    <p><a href="{% url 'story_list' %}">Return to list</a></p>
+
+{% endblock %}

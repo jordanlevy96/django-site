@@ -1,0 +1,14 @@
+{% extends 'lit/base.html' %}
+
+{% block content %}
+    {% for story in story_list %}
+    <div class="story">
+        <h2><span title="Click to read story">
+            <a href="{% url 'story_detail' pk=story.pk %}">{{ story.title }}</a>
+        </span></h2>
+        <p id="date">published: {{ story.published_date }}</p>
+        <hr />
+        <p>{{ story.description }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

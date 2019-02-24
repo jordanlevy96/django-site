@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="blog post list" />
+    <meta name="author" content="Jordan Levy" />
+    <title>Jordan Writes</title>
+    <link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <script src="{% static 'js/header.js' %}"></script>
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    {% if user.is_authenticated %}
+        <div class="admin-button">
+            <!-- <p><a href="{% url 'post_new' %}">New Post</a></p> -->
+        </div>
+    {% endif %}
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
