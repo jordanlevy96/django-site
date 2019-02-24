@@ -5,7 +5,7 @@
     <div id="story" class="content">
         <h1 id="title">{{ story.title }}</h1>
         {% if story.created_date %}
-            <p class="date">{{ story.created_date }}
+            <p class="date">{{ story.created_date.date }}
         {% endif %}
         <hr />
         <p>{{ story.text|linebreaksbr }}</p>
