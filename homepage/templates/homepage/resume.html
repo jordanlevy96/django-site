@@ -7,9 +7,10 @@
     <meta charset="utf-8" />
     <meta name="description" content="My website!" />
     <meta name="author" content="Jordan Levy" />
-    <title>Jordan Writes</title>
+    <title>Jordan Levy</title>
     <link rel="stylesheet" href="{% static 'css/site_wide.css' %}">
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/resume.css' %}">
     <script src="{% static 'js/header.js' %}"></script>
 </head>
 <body>
@@ -18,13 +19,11 @@
 
     <div class="resume">
         <div class="text">
-            <h2>Hello, Interested Party!</h2>
+            <h3>Hello, Interested Party!</h3>
 
-            <p>Welcome! This is my simple blogging site; I may not be a prolific content creator, but I made this site to expand my web development skills and eventually publish some of my writing. </p>
+            <p>Welcome! This is my blog. I made this website to expand my web development skills and to informally showcase some of my work and passions. It runs using Django and Heroku, and the source code is <a href="https://github.com/jordanlevy96/django-site"> hosted on GitHub.</a> You could also check out the <a href={% url 'post_list' %}>Blog</a>, where I mostly write about site development.</p>
 
-            <p>For now, the most interesting thing to see about this site is the source code. I use Heroku as my server and I <a href="https://github.com/jordanlevy96/django-site"> host my code on GitHub; check it out! </a></p>
-
-            <p>Also, <a href="{% static 'misc/resume.pdf' %}">here's a digital copy of my resume</a>, circa February 2019.</p>
+            <p>Also, <a href="{% static 'misc/resume.pdf' %}">here's a PDF my current (February 2019) resume</a>.</p>
 
         </div>
     </div>

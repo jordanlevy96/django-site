@@ -2,7 +2,7 @@
 
 {% block content %}
     {% for poem in poem_list %}
-    <div class="poem">
+    <div id="poem" class="content">
         <h2><span title="Click to read poem">
             <a href="{% url 'poem_detail' pk=poem.pk %}">{{ poem.title }}</a>
         </span></h2>
