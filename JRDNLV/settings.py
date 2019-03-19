@@ -151,6 +151,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Grab the ACME_CHALLENGE_CONTENT out of an environment variable
 ACME_CHALLENGE_CONTENT = os.environ['ACME_CHALLENGE_CONTENT']
 
-# Prepare for SSL
-SECURE_SSL_REDIRECT = True
-
