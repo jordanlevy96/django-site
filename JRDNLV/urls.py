@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic.base import RedirectView
+from views import acme_challenge
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,5 +24,5 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^$', RedirectView.as_view(url='home', permanent=False), name='home'), #redirects from base site to home
     url(r'^lit/', include('lit.urls')),
-	url(r'^.well-known/acme-challenge/OgMmW0LpOud-sUFmp-eL0bSpgLPorsSTZs4qBVByTAI', include('JRDNLV.ssl.cert')), #SSL certificate
+	url(r'^.well-known/acme-challenge/.*$', views.acme_challenge, name='acme-challenge'), #SSL certificate
 ]
