@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^$', RedirectView.as_view(url='home', permanent=False), name='home'), #redirects from base site to home
     url(r'^lit/', include('lit.urls')),
-	url(r'^.well-known/acme-challenge/.*$', views.acme_challenge, name='acme-challenge'), #SSL certificate
+	url(r'^.well-known/acme-challenge/.*$', acme_challenge, name='acme-challenge'), #SSL certificate
 ]
