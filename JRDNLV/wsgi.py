@@ -14,5 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "JRDNLV.settings")
 
 application = get_wsgi_application()
-
-ACME_CHALLENGE_CONTENT = os.environ.get('ACME_CHALLENGE_CONTENT')

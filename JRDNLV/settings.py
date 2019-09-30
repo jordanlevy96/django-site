@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 	 #'whitenoise.runserver_nostatic',
 	 # commented out because idk what WhiteNoise is
     'django.contrib.staticfiles',
-	'JRDNLV', #this enables site-wide templates
+	'JRDNLV', #this should enable site-wide templates?
     'blog',
 	'homepage',
     'lit',
