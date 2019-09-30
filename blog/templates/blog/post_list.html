@@ -6,7 +6,7 @@
 		<h2><span title="Click to view post details">
 			<a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
 		</span></h2>
-		<p id="date">published: {{ post.published_date.date }}</p>
+		<p id="date">published: {{ post.published_date }}</p>
 		<hr />
 		<p>{{ post.description }}</p>
 	</div>

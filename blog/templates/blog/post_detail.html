@@ -1,17 +1,16 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+	{% if user.is_authenticated %}
+		<div class="admin-button">
+			<p><a href="{% url 'post_edit' pk=post.pk %}">Edit Post</a></p>
+		</div>
+	{% endif %}
+
 	<div class="post">
-
-		{% if user.is_authenticated %}
-			<div class="admin-button">
-				<p><a href="{% url 'post_edit' pk=post.pk %}">Edit Post</a></p>
-			</div>
-		{% endif %}
-
 		<h1 id="post_title">{{ post.title }}</h1>
 		{% if post.published_date %}
-			<p class="date">{{ post.published_date.date }}
+			<p class="date">{{ post.published_date }}
 		{% endif %}
 		<hr />
 		<p>{{ post.text|linebreaksbr }}</p>
