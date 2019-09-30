@@ -151,6 +151,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Grab the ACME_CHALLENGE_CONTENT out of an environment variable
 ACME_CHALLENGE_CONTENT = os.environ['ACME_CHALLENGE_CONTENT']
 
-# Set this to True when you start paying for Heroku to handle SSL certs
-SECURE_SSL_REDIRECT = False
+# Prepare for SSL
+SECURE_SSL_REDIRECT = True
 
