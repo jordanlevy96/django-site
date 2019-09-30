@@ -6,7 +6,7 @@
         <h2><span title="Click to read poem">
             <a href="{% url 'poem_detail' pk=poem.pk %}">{{ poem.title }}</a>
         </span></h2>
-        <p id="date">published: {{ poem.published_date }}</p>
+        <p id="date">published: {{ poem.published_date.date }}</p>
         <hr />
         <p>{{ poem.description }}</p>
     </div>
