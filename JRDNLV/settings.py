@@ -148,6 +148,3 @@ STATICFILES_DIRS = [
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Grab the ACME_CHALLENGE_CONTENT out of an environment variable
-ACME_CHALLENGE_CONTENT = os.environ['ACME_CHALLENGE_CONTENT']
-
