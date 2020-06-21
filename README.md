@@ -1,6 +1,6 @@
-# Jordan's Blogging Site
+# Deprecated Blogging Site
 
-This site was built by the utterly fantastic project starter template for Django 1.9.
+This site was built by the utterly fantastic project starter template for Django 1.9. This site is down forever and has been replaced by a simpler site hosted on Firebase. I am keeping the code up for my own reference, mostly to integrate into the new site or in case I find myself using Django again.
 
 ## Features
 
